@@ -1,8 +1,8 @@
-import Search from './components/Search/index';
+import Home from './components/Home/index'
 
 export default {
   name: 'app',
   components: {
-    Search
+    Home
   }
 }
