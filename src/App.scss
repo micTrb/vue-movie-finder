@@ -1,8 +1,24 @@
+:root {
+  --dark-blue: #000C29;
+  --red-lip: #FA005F;
+  --white: #FFFFFD;
+  --light-grey: #E6E6E6;
+  --light-blue: #23C9F5;
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  min-height: 100vh;
+  padding: 2rem 4rem;
+  background-color: #000C29;
 }

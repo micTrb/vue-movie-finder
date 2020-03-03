@@ -1,4 +1,8 @@
-<div>
-    <input v-model="searchQuery" @keyup.enter="search">
+<div class="search">
+    <input class="search_input" v-model="searchQuery" @keyup.enter="search">
+    <div class="error" v-if="error">
+        <i class="fas fa-exclamation-circle error__icon"></i>
+        <span class="error__text">{{ error }}</span>
+    </div>
 </div>
 

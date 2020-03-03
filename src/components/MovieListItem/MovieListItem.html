@@ -1,1 +1,6 @@
-<li>{{ movie.Title }}</li>
+<li>
+    <img :src="imageURL" alt="">
+    <a :href="`https://www.imdb.com/title/${movie.imdbID}`" target="_blank">More</a>
+    <p>{{ movie.Title }}</p>
+    <span>{{ movie.Year }}</span>
+</li>

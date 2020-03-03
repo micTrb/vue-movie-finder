@@ -7,7 +7,8 @@ export default {
   props: [],
   data () {
     return {
-      searchQuery: ''
+      searchQuery: '',
+      error: ''
     }
   },
   computed: {
@@ -20,8 +21,10 @@ export default {
       if (response.status === 200) {
         const data = response.data
         if (data.Response === 'True') {
+          this.error = ''
           return this.$emit('search', data.Search)
         }
+        this.error = data.Error
       }
     }
   }

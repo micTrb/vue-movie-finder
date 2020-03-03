@@ -1,3 +1,26 @@
 .search {
+  &_input {
+    font-size: 4rem;
+    font-family: Roboto;
+    font-weight: 300;
+    background-color: transparent;
+    border: none;
+    color: #FFFFFD;
+    border-left: 0.5rem solid #23C9F5;
+  }
+}
 
+.error {
+  font-family: Roboto;
+  margin-top: 1.5rem;
+  font-size: 2rem;
+
+  &__icon {
+    color: #faa506;
+  }
+
+  &__text {
+    color: #FFFFFD;
+    margin-left: 1rem;
+  }
 }
