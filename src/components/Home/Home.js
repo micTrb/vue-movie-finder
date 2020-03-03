@@ -1,8 +1,12 @@
-import Search from '../Search/index'
+import Search from '../Search/index.vue'
+import MovieList from '../MovieList/index.vue'
 
 export default {
   name: 'home',
-  components: { Search },
+  components: {
+    Search,
+    MovieList
+  },
   props: [],
   data () {
     return {

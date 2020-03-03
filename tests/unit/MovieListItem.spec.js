@@ -1,28 +1,28 @@
-import Vue from 'vue';
-import HomeComponent from './index.vue';
+import Vue from 'vue/types';
+import MovielistitemComponent from '../../src/components/MovieListItem/index.vue';
 
 // Here are some Jasmine 2.0 tests, though you can
 // use any test runner / assertion library combo you prefer
-describe('HomeComponent', () => {
+describe('MovielistitemComponent', () => {
   // Inspect the raw component options
   it('has a created hook', () => {
-    // expect(typeof HomeComponent.created).toBe('function');
+    // expect(typeof MovielistitemComponent.created).toBe('function');
   })
   // Evaluate the results of functions in
   // the raw component options
   it('sets the correct default data', () => {
-    // expect(typeof HomeComponent.data).toBe('function')
-    // const defaultData = HomeComponent.data();
+    // expect(typeof MovielistitemComponent.data).toBe('function')
+    // const defaultData = MovielistitemComponent.data();
     // expect(defaultData.message).toBe('hello!');
   })
   // Inspect the component instance on mount
   it('correctly sets the message when created', () => {
-    // const vm = new Vue(HomeComponent).$mount();
+    // const vm = new Vue(MovielistitemComponent).$mount();
     // expect(vm.message).toBe('bye!');
   })
   // Mount an instance and inspect the render output
   it('renders the correct message', () => {
-    // const Ctor = Vue.extend(HomeComponent);
+    // const Ctor = Vue.extend(MovielistitemComponent);
     // const vm = new Ctor().$mount();
     // expect(vm.$el.textContent).toBe('bye!');
   })
