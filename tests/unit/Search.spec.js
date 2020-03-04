@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import axios from 'axios'
 import { shallowMount } from '@vue/test-utils'
-import Search from '../../src/components/Search/index.vue'
+import Search from '../../src/components/Search/Search.vue'
 
 jest.mock('axios');
 
@@ -75,8 +75,8 @@ describe('Error Handling', () => {
   it('Should make the error disappear if a new search is successful', async () => {
     wrapper.vm.error = 'Too many results.';
 
-    let error = wrapper.find('span');
-    expect(error.exists()).toBe(true);
+    let isError = wrapper.get('.error');
+    expect(isError).toBe(true);
 
     const response = { status: 200, data: { Response: 'True', Search: ['foobar', 'hello'] }};
     axios.get.mockImplementation(async () => response);

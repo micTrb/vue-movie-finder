@@ -1,5 +1,5 @@
-import Search from '../Search/index.vue'
-import MovieList from '../MovieList/index.vue'
+import Search from '../Search/Search.vue'
+import MovieList from '../MovieList/MovieList.vue'
 
 export default {
   name: 'home',

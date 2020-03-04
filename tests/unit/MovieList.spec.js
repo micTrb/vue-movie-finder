@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils'
-import MovieList from '../../src/components/MovieList/index.vue';
-import MovieListItem from '../../src/components/MovieListItem/index.vue';
+import MovieList from '../../src/components/MovieList/MovieList.vue';
+import MovieListItem from '../../src/components/MovieListItem/MovieListItem.vue';
 
 
 describe('components/MovieList', () => {

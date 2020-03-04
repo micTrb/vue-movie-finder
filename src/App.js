@@ -1,4 +1,4 @@
-import Home from './components/Home/index'
+import Home from './components/Home/Home.vue'
 
 export default {
   name: 'app',

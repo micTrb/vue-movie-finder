@@ -1,4 +1,4 @@
-import MovieListItem from '../../components/MovieListItem';
+import MovieListItem from '../MovieListItem/MovieListItem.vue'
 
 export default {
   name: 'movie-list',

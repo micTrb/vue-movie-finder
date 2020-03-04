@@ -7,6 +7,15 @@
     border: none;
     color: #FFFFFD;
     border-left: 0.5rem solid #23C9F5;
+
+    @media screen and (max-width: 900px) {
+      font-size: 4rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 3rem;
+      padding: 1.2rem;
+    }
   }
 }
 

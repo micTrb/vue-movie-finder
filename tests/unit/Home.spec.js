@@ -1,7 +1,7 @@
 import { shallowMount } from '@vue/test-utils'
-import Home from '../../src/components/Home/index';
-import Search from '../../src/components/Search/index';
-import MovieList from '../../src/components/MovieList/index';
+import Home from '../../src/components/Home/Home';
+import Search from '../../src/components/Search/Search';
+import MovieList from '../../src/components/MovieList/MovieList';
 
 describe('component/Home', () => {
 

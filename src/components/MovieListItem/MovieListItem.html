@@ -1,6 +1,8 @@
 <li>
-    <img :src="imageURL" alt="">
-    <a :href="`https://www.imdb.com/title/${movie.imdbID}`" target="_blank">More</a>
-    <p>{{ movie.Title }}</p>
-    <span>{{ movie.Year }}</span>
+    <div class="movie__image">
+        <img class="movie__poster" :src="imageURL" alt="">
+        <a class="movie__more" :href="`https://www.imdb.com/title/${movie.imdbID}`" target="_blank">More</a>
+    </div>
+    <p class="movie__title">{{ movie.Title }}</p>
+    <span class="movie__year">{{ movie.Year }}</span>
 </li>
