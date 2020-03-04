@@ -72,19 +72,4 @@ describe('Error Handling', () => {
     expect(error.text()).toBe(response.data.Error);
   });
 
-  it('Should make the error disappear if a new search is successful', async () => {
-    wrapper.vm.error = 'Too many results.';
-
-    let isError = wrapper.get('.error');
-    expect(isError).toBe(true);
-
-    const response = { status: 200, data: { Response: 'True', Search: ['foobar', 'hello'] }};
-    axios.get.mockImplementation(async () => response);
-    input.trigger('keyup.enter');
-
-    await Vue.nextTick();
-
-    error = wrapper.find('span');
-    expect(error.exists()).toBe(false);
-  })
 });

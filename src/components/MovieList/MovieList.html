@@ -1,3 +1,11 @@
-<ul class="grid">
+<!--<ul class="grid">
   <movie-list-item v-for="movie in movies" :movie="movie" :key="movie.imdbID"/>
-</ul>
+</ul>-->
+
+<slider ref="slider" :options="options">
+    <slideritem class="slider-item-custom" v-for="movie in movies" :key="movie.imdbID" style="width: 45%">
+      <movie-list-item :movie="movie"></movie-list-item>
+    </slideritem>
+  <div slot="loading">loading...</div>
+</slider>
+
